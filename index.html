@@ -9,16 +9,17 @@
 </head>
 <body>
     
-    <div class="input_items">
-        <div class="name">
-            <input id="name" type="text" maxlength="14" placeholder="Name"></input>
-        </div>
-        <div class="message">
-            <input id="message" type="text" placeholder="Message" maxlength="60">
-        </div>
-        <div class="buttons">
-            <button onclick="message_send()" id="button">Send</button>
+    <div>
+        <h1 class="headers">Log In</h1>
+
+        <div class="input_items">
+            <div class="name">
+                <input id="name" type="text" maxlength="14" placeholder="Name" required></input>
+
+                <button onclick="redirect()" id="button">log in</button>
+            </div>
         </div>
     </div>
+
 </body>
 </html>

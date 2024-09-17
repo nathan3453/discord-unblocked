@@ -1,15 +1,26 @@
-
+const { use } = require("react");
+const user = document.getElementById("name");
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 
+
+function redirect() {
+  
+  if (user.value == "")
+    user.placeholder = 'Username required!';
+  else
+    window.location.href = "chat.html";
+    
+}
+
 function message_send() {
     const message = document.getElementById("message");
     const message_value = message.value;
-    const name = document.getElementById("name");
-    const name_value = name.value;
+    
+    const name_value = user.value;
     console.log(name_value);
     console.log(message_value);
     console.log(`${name_value}| ${message_value}`);
